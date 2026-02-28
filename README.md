@@ -12,7 +12,7 @@ Converts between Celsius, Fahrenheit, and Kelvin.
 ## Architecture
 
 ```
-temp-conv-backend
+temp_conv_api
 |-- convertors.go   Includes functions that convert the temperature
 |-- go.mod
 |-- handlers.go     Handler functions that run on each request
@@ -30,11 +30,20 @@ temp-conv-backend
 ### Run the Backend
 
 ```bash
-go run main.go
+go run .
 ```
 
 The server starts on `http://localhost:8080`.
 
+### Build
+```bash
+go build
+```
+
+### Run the build
+```bash
+./temp_conv_api
+```
 
 ## API
 
